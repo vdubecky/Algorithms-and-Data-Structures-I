@@ -2,8 +2,6 @@
 import math
 from typing import Any, List, Optional, TextIO
 
-# V nasledujicim textu pouzivame pojem "halda" ve vyznamu "binarni halda".
-
 
 class MinHeap:
     """Trida MinHeap slouzi k reprezentaci minimove haldy.
@@ -17,9 +15,6 @@ class MinHeap:
         self.size: int = 0
         self.array: List[Any] = []
 
-
-# Implementujte nasledujici funkce pro ziskani prvku v halde:
-# POZOR: Nezapomente, ze indexujeme pole od 0.
 
 def parent_index(i: int) -> Optional[int]:
     """Vrati index rodice prvku na pozici 'i'.
